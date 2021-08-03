@@ -29,7 +29,7 @@ namespace NewDarkThemeDemoWebApp.Pages
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
             Console.WriteLine("Hello! This is a test message.");
             
-            Console.WriteLine(Hello! This is a test message.);
+            Console.WriteLine(Hello! This is a test message);
             return;
             Console.WriteLine("Hello! This is another test message.");
         }
