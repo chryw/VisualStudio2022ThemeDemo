@@ -1,9 +1,5 @@
 {
   "dependencies": {
-    "mssql1": {
-      "type": "mssql",
-      "connectionId": "VaultUri"
-    },
     "secrets1": {
       "type": "secrets",
       "connectionId": "VaultUri"
