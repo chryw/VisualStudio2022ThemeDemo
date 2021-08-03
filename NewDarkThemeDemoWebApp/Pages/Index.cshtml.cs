@@ -47,7 +47,7 @@ namespace NewDarkThemeDemoWebApp.Pages
     public class StatusChecker
     {
         private int invokeCount;
-        private int maxCount;
+        private readonly int maxCount;
 
         public StatusChecker(int count)
         {
@@ -65,6 +65,7 @@ namespace NewDarkThemeDemoWebApp.Pages
 
             if (invokeCount == maxCount)
             {
+                Console.WriteLine("Resetting timer");
                 // Reset the counter and signal the waiting thread.
                 invokeCount = 0;
                 autoEvent.Set();
