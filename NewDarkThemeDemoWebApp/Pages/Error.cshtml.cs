@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Threading.Tasks;
 
 namespace NewDarkThemeDemoWebApp.Pages
 {
@@ -26,6 +27,11 @@ namespace NewDarkThemeDemoWebApp.Pages
         public void OnGet()
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+            Console.WriteLine("Hello! This is a test message.");
+            
+            Console.WriteLine(Hello! This is a test message.);
+            return;
+            Console.WriteLine("Hello! This is another test message.");
         }
     }
 }
