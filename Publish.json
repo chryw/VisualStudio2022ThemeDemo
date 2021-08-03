@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appService_app-cherwan-new-dark-theme-demo_name": {
+      "type": "string"
+    },
+    "appServicePlan_asp-cherwan-windows-f1_location": {
+      "type": "string"
+    },
+    "appServicePlan_asp-cherwan-windows-f1_name": {
+      "type": "string"
+    },
+    "appServicePlan_asp-cherwan-windows-f1_resourceGroup": {
+      "type": "string"
+    },
+    "currentStack": {
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "location": "[parameters('appServicePlan_asp-cherwan-windows-f1_location')]",
+      "name": "[parameters('appService_app-cherwan-new-dark-theme-demo_name')]",
+      "type": "Microsoft.Web/sites",
+      "apiVersion": "2018-02-01",
+      "tags": {
+        "[concat('hidden-related:', resourceId(parameters('appServicePlan_asp-cherwan-windows-f1_resourceGroup'),'Microsoft.Web/serverFarms', parameters('appServicePlan_asp-cherwan-windows-f1_name')))]": "empty"
+      },
+      "kind": "app",
+      "properties": {
+        "name": "[parameters('appService_app-cherwan-new-dark-theme-demo_name')]",
+        "httpsOnly": true,
+        "reserved": false,
+        "serverFarmId": "[resourceId(parameters('appServicePlan_asp-cherwan-windows-f1_resourceGroup'),'Microsoft.Web/serverFarms', parameters('appServicePlan_asp-cherwan-windows-f1_name'))]",
+        "siteConfig": {
+          "metadata": [
+            {
+              "name": "CURRENT_STACK",
+              "value": "[parameters('currentStack')]"
+            }
+          ]
+        }
+      },
+      "identity": {
+        "type": "SystemAssigned"
+      }
+    }
+  ]
+}

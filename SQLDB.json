@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "dbserver_sqldb-cherwan-new-dark-theme-demodbserver_name": {
+      "type": "string"
+    },
+    "dbserver_sqldb-cherwan-new-dark-theme-demodbserver_adminlogin": {
+      "type": "string"
+    },
+    "dbserver_sqldb-cherwan-new-dark-theme-demodbserver_adminpassword": {
+      "type": "securestring"
+    },
+    "dbserver_sqldb-cherwan-new-dark-theme-demodbserver_location": {
+      "type": "string"
+    },
+    "dbserver_sqldb-cherwan-new-dark-theme-demodbserver_sqldb-cherwan-new-dark-theme-demo_name": {
+      "type": "string"
+    },
+    "dbserver_sqldb-cherwan-new-dark-theme-demodbserver_sqldb-cherwan-new-dark-theme-demo_location": {
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "location": "[parameters('dbserver_sqldb-cherwan-new-dark-theme-demodbserver_location')]",
+      "name": "[parameters('dbserver_sqldb-cherwan-new-dark-theme-demodbserver_name')]",
+      "type": "Microsoft.Sql/servers",
+      "apiVersion": "2019-06-01-preview",
+      "properties": {
+        "administratorLogin": "[parameters('dbserver_sqldb-cherwan-new-dark-theme-demodbserver_adminlogin')]",
+        "administratorLoginPassword": "[parameters('dbserver_sqldb-cherwan-new-dark-theme-demodbserver_adminpassword')]",
+        "version": "12.0"
+      },
+      "resources": [
+        {
+          "location": "[parameters('dbserver_sqldb-cherwan-new-dark-theme-demodbserver_location')]",
+          "name": "AllowAllAzureIPs",
+          "type": "firewallrules",
+          "apiVersion": "2019-06-01-preview",
+          "dependsOn": [
+            "[concat('Microsoft.Sql/servers/', parameters('dbserver_sqldb-cherwan-new-dark-theme-demodbserver_name'))]"
+          ],
+          "properties": {
+            "endIpAddress": "0.0.0.0",
+            "startIpAddress": "0.0.0.0"
+          }
+        },
+        {
+          "location": "[parameters('dbserver_sqldb-cherwan-new-dark-theme-demodbserver_sqldb-cherwan-new-dark-theme-demo_location')]",
+          "name": "[parameters('dbserver_sqldb-cherwan-new-dark-theme-demodbserver_sqldb-cherwan-new-dark-theme-demo_name')]",
+          "type": "databases",
+          "apiVersion": "2019-06-01-preview",
+          "dependsOn": [
+            "[concat('Microsoft.Sql/servers/', parameters('dbserver_sqldb-cherwan-new-dark-theme-demodbserver_name'))]"
+          ],
+          "sku": {
+            "name": "S0",
+            "tier": "Standard"
+          },
+          "properties": {
+            "collation": "SQL_Latin1_General_CP1_CI_AS",
+            "maxSizeBytes": "1073741824"
+          }
+        }
+      ]
+    }
+  ]
+}

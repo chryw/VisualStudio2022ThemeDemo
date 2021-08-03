@@ -1,0 +1,9 @@
+﻿/* import the necessary Bootstrap files */
+@import "_functions.scss";
+@import "_variables.scss";
+
+/* make changes to the !default Bootstrap variables */
+$body-color: green;
+
+/* finally, import Bootstrap to set the changes! */
+@import "bootstrap.scss";
