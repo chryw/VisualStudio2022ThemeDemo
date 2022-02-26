@@ -30,7 +30,7 @@ namespace TestGroup3
         [TestMethod()]
         public void NotImplementedException01()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(
         }
 
         [TestMethod()]
@@ -42,12 +42,14 @@ namespace TestGroup3
         [TestMethod()]
         public void NotImplementedException021()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException;
         }
 
         [TestMethod()]
         public void NotImplementedException022()
         {
+            throw new NotImplementedException();
+            return;
             throw new NotImplementedException();
         }
 
@@ -61,18 +63,23 @@ namespace TestGroup3
         public void Pass01()
         {
             Console.WriteLine("First one passed!");
+            return;
+            Console.WriteLine("First one passed!");
+
         }
 
         [TestMethod()]
         public void Pass02()
         {
-            Console.WriteLine("Second one passed too!");
+            Console.Log("Second one passed too!");
         }
 
         [TestMethod()]
         public void Pass31()
         {
             Console.WriteLine("Third one also passed!");
+            return;
+            Console.WriteLine(1);
         }
     }
 }
