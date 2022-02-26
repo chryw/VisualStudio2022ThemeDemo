@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../NewDarkThemeDemoWebApp/VisualStudio2022ThemeDemoWebApp.csproj" />
+    <ProjectReference Include="../VisualStudio2022ThemeDemoWebApp/VisualStudio2022ThemeDemoWebApp.csproj" />
   </ItemGroup>
 
 </Project>
