@@ -1,13 +1,13 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using VisualStudio2022ThemeDemoWebApp;
+using TestGroup1;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace VisualStudio2022ThemeDemoWebApp.Tests
+namespace TestGroup1
 {
     [TestClass()]
-    public class StartupTests
+    public class Test1
     {
         [TestMethod()]
         public void Fail01()
