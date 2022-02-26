@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31602.42
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewDarkThemeDemoWebApp", "NewDarkThemeDemoWebApp\NewDarkThemeDemoWebApp.csproj", "{66893C3C-EBB9-4CD4-937C-9028F306F723}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisualStudio2022ThemeDemoWebApp", "NewDarkThemeDemoWebApp\VisualStudio2022ThemeDemoWebApp.csproj", "{66893C3C-EBB9-4CD4-937C-9028F306F723}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewDarkThemeDemoWebAppTests", "NewDarkThemeDemoWebAppTests\NewDarkThemeDemoWebAppTests.csproj", "{1B447C16-61D5-4282-BCFF-59B4DF462637}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisualStudio2022ThemeDemoWebAppTests", "NewDarkThemeDemoWebAppTests\VisualStudio2022ThemeDemoWebAppTests.csproj", "{1B447C16-61D5-4282-BCFF-59B4DF462637}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

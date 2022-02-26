@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Azure.Identity;
 
-namespace NewDarkThemeDemoWebApp
+namespace VisualStudio2022ThemeDemoWebApp
 {
     public class Program
     {

@@ -7,13 +7,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using NewDarkThemeDemoWebApp.Data;
+using VisualStudio2022ThemeDemoWebApp.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NewDarkThemeDemoWebApp
+namespace VisualStudio2022ThemeDemoWebApp
 {
     public class Startup
     {

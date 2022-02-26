@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using NewDarkThemeDemoWebApp.Data;
+using VisualStudio2022ThemeDemoWebApp.Data;
 using System;
 
-namespace NewDarkThemeDemoWebApp.Data.Migrations
+namespace VisualStudio2022ThemeDemoWebApp.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
