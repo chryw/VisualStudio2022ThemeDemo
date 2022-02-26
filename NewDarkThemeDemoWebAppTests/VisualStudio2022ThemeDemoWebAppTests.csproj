@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>.NETCoreApp,Version=v3.1</TargetFramework>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewDarkThemeDemoWebApp\NewDarkThemeDemoWebApp.csproj" />
+    <ProjectReference Include="..\VisualStudio2022ThemeDemoWebApp\VisualStudio2022ThemeDemoWebApp.csproj" />
   </ItemGroup>
 
 </Project>

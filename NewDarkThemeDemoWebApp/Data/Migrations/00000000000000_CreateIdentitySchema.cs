@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace NewDarkThemeDemoWebApp.Data.Migrations
+namespace VisualStudio2022ThemeDemoWebApp.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

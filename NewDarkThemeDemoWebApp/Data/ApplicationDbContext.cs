@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NewDarkThemeDemoWebApp.Data
+namespace VisualStudio2022ThemeDemoWebApp.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

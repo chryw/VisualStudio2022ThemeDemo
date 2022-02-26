@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-NewDarkThemeDemoWebApp-BE8E9BAF-1085-4413-839E-DE566DD75C33</UserSecretsId>
+    <UserSecretsId>aspnet-VisualStudio2022ThemeDemoWebApp-BE8E9BAF-1085-4413-839E-DE566DD75C33</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NewDarkThemeDemoWebApp.Pages
+namespace VisualStudio2022ThemeDemoWebApp.Pages
 {
     public class PrivacyModel : PageModel
     {

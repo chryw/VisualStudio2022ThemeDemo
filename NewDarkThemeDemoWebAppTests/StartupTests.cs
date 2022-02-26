@@ -1,10 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NewDarkThemeDemoWebApp;
+using VisualStudio2022ThemeDemoWebApp;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NewDarkThemeDemoWebApp.Tests
+namespace VisualStudio2022ThemeDemoWebApp.Tests
 {
     [TestClass()]
     public class StartupTests
