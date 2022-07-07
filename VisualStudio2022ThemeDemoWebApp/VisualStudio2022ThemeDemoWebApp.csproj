@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <UserSecretsId>aspnet-VisualStudio2022ThemeDemoWebApp-BE8E9BAF-1085-4413-839E-DE566DD75C33</UserSecretsId>
   </PropertyGroup>
 
